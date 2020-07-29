@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{position:absolute; left:2px; top:2px;}
+</style>
+</head>
+<body>
+	<div style="width:10px; height:10px; background:red;"></div>
+</body>
+<script>
+	let cnt=1;
+	document.addEventListener("click",function(e){
+		console.log("클릭이벤트 발생:"+cnt);
+		cnt++;
+		console.log(e);
+	});
+		
+	/*
+	clientX, clientY //현재 윈도우 기준 위치값. 현재 윈도우창을 기준으로 함.
+	screen X, screenY // 화면 기준 위치값
+	page X, pageY // 현재 문서 내 기준 위치값, 바디쪽 기준
+	offsetX, offsetY // 현재 타겟기준 위치값 . 타겟의 맨왼위가 0.0좌표!
+	*/
+	
+</script>
+</html>
